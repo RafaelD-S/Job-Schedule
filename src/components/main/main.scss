@@ -1,0 +1,13 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 60rem;
+    width: 100%;
+    padding: 3rem 1.5rem;
+}
