@@ -60,6 +60,7 @@ ul {
         border: 1px solid #239cd3;
         background-color: #1a1a24;
         font-weight: 600;
+        position: relative;
     }
 }
 
@@ -82,6 +83,25 @@ button {
     font-weight: 700;
     border-radius: 50px;
 }
-main select:disabled , main input:disabled {
+main select:disabled , main input:disabled, button:disabled {
     opacity: .3;
+}
+
+@media(max-width: 600px) {
+    article:nth-child(2) {
+        grid-template-columns: 100%;
+    }
+    article:nth-child(1) input {
+        width: 100%;
+    }
+}
+@media(min-width: 600px) {
+    article:nth-child(2) div:nth-child(1) ul li:before {
+        content: '>';
+        position: absolute;
+        color: #239cd3;
+        right: -5.75%;
+        top: 15%;
+        font-size: 1.25rem;
+    }
 }
