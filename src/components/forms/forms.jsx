@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './forms.scss'
 
 export default function Forms() {
@@ -97,7 +97,7 @@ export default function Forms() {
                 </div>
             </article>
             
-            <button>
+            <button disabled={modalDiaHorario == false ? true : false}>
                 Enviar
             </button>
         </form>
